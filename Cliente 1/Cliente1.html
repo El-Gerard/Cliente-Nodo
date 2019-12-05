@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Cliente 1</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="consumir.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+            <br><br>
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Red de nodos</div>
+                    <div class="card-body">
+                        
+                            <h3>Agregar nodo</h3>
+                            <br>
+                            <div class="form-group row">                               
+                                <label for="Agregar_nodo" class="col-md-2 col-form-label text-md-right">URI de nodo</label>
+                                <div class="col-md-8">
+                                    <input type="text" name="nodo" id="nodo" class="form-control" placeholder="http://IP:puerto/proyecto/applicationPath" required autofocus/>
+                                </div>
+                                <button type="button" class="btn btn-primary" onclick="agregarNodo();">Agregar</button>
+                                <br>
+                                <div class="col-md-8" id="Nnodos">
+                                <br>
+                                Numero de nodos: <span></span>
+                                </div>
+                            </div>
+
+                            <h3>Agregar números al nodo</h3>
+                            <br>
+                            <div class="form-group row">
+                                <label for="numero" class="col-md-2 col-form-label text-md-right">Numero</label>
+                                <div class="col-md-2">
+                                    <input type="text" name="base" class="form-control" id="base"/>
+                                </div>
+                                <button type="button" class="btn btn-primary" onclick="agregar();">Agregar</button>
+                                <br>
+                                <div class="col-md-8" id="resultado">
+                                <br>
+                                Suma de los números en el nodo: <span></span>
+                                </div>
+                            </div> 
+
+                            <h3>Total números en la red</h3>
+                            <br>
+                            <div class="form-group row">                                
+                                <div class="col-md-9">
+                                <button type="button" class="btn btn-primary col-md-4" onclick="consultar();">Total</button>
+                                </div>
+                                <br>
+                                <div class="col-md-5" id="Tnodos">
+                                <br>
+                                Total de numeros en la red: <span></span>
+                                </div>
+                            </div>                                
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+</html>
+
